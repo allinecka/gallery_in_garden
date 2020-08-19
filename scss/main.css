@@ -168,8 +168,8 @@ h3 {
 
 .menu button:hover,
 .menu button:focus {
-  background: white;
-  color: black;
+  background: #686b6b;
+  color: white;
 }
 
 .menu.zobrazit menu {
@@ -313,10 +313,6 @@ nav .menu a {
   }
 }
 
-svg:hover {
-  fill: lightgray;
-}
-
 .medallion {
   margin-bottom: 88px;
   margin-top: 63px;
@@ -410,6 +406,36 @@ footer a {
   }
   .copy {
     padding-left: 0;
+  }
+  .menu.zobrazit menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  nav .menu {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  nav .menu a {
+    line-height: 30px;
+  }
+  nav.col-md-8 {
+    padding-right: 0;
   }
 }
 /*# sourceMappingURL=main.css.map */

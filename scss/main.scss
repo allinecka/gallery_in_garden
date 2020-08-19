@@ -138,8 +138,8 @@ h3 {
 
 .menu button:hover,
 .menu button:focus {
-  background: white;
-  color: black;
+  background: #686b6b;
+  color:white;
 }
 
 .menu.zobrazit menu {
@@ -247,9 +247,6 @@ nav {
     margin-bottom: 50px;
   }
 }
-svg:hover {
-  fill: lightgray;
-}
 
 .medallion {
   margin-bottom: 88px;
@@ -333,4 +330,21 @@ footer {
   .copy {
     padding-left:0;
   }
+  .menu.zobrazit menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  nav .menu {
+    align-items:flex-end;
+    display: flex;
+    flex-direction: column;
+    a {
+      line-height: 30px;
+    }
+  } 
+  nav.col-md-8 {
+    padding-right:0;
+  }
 }
+
