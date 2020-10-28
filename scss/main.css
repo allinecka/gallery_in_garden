@@ -10,8 +10,12 @@ ul {
 }
 
 p {
-  line-height: 24px;
+  line-height: 1.5em;
   font-weight: normal;
+}
+
+button {
+  display: block;
 }
 
 body {
@@ -20,6 +24,12 @@ body {
   font-style: normal;
   font-size: 16px;
   color: #000000;
+}
+
+@media screen and (max-width: 376px) {
+  main h2, .author {
+    font-size: 27px;
+  }
 }
 
 .container {
@@ -81,6 +91,12 @@ header {
   padding: 22px 0;
 }
 
+@media screen and (max-width: 1200px) {
+  header {
+    padding: 32px 0;
+  }
+}
+
 header .row {
   width: 100%;
 }
@@ -139,21 +155,21 @@ h1 {
   margin: 0;
   font-weight: 800;
   font-size: 85px;
-  line-height: 116px;
+  line-height: 1.365em;
   text-align: center;
 }
 
 @media only screen and (max-width: 767px) {
   h1 {
     font-size: 44px;
-    line-height: 72px;
+    line-height: 1.64em;
   }
 }
 
 h2 {
   font-size: 50px;
   font-weight: 800;
-  line-height: 68px;
+  line-height: 1.36em;
   margin-bottom: 26px;
   margin-top: 0;
 }
@@ -168,7 +184,7 @@ h2 {
 h3 {
   font-size: 25px;
   font-weight: normal;
-  line-height: 34px;
+  line-height: 1.36em;
   font-style: normal;
   margin-bottom: 81px;
 }
@@ -184,6 +200,7 @@ h3 {
 .authors {
   display: -ms-grid;
   display: grid;
+  line-height: 1.5em;
   width: 100%;
   -ms-grid-columns: (minmax(170px, 1fr))[auto-fill];
       grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
@@ -260,7 +277,7 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  line-height: 22px;
+  line-height: 1.375em;
   font-weight: 900;
   display: flex;
   -ms-flex-wrap: nowrap;
@@ -281,7 +298,6 @@ nav {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    margin-top: 20px;
   }
 }
 
@@ -297,7 +313,6 @@ nav {
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: end;
-    margin-top: 52px;
     padding-left: 0;
   }
 }
@@ -316,14 +331,14 @@ nav a {
 @media only screen and (max-width: 1200px) {
   nav a {
     margin: 0;
-    line-height: 33px;
+    line-height: 2.06em;
   }
 }
 
 @media only screen and (max-width: 1200px) {
   header img {
     position: absolute;
-    top: 10px;
+    top: 19px;
   }
   .menu.zobrazit menu {
     padding: 0;
@@ -342,18 +357,6 @@ nav a {
   }
   nav .menu a {
     margin: 10px 0;
-  }
-}
-
-@media only screen and (min-width: 1201px) {
-  nav .menu a:nth-child(2) {
-    margin-right: 45px;
-  }
-  nav .menu a:nth-child(3) {
-    margin-right: 38px;
-  }
-  nav .menu a:nth-child(4) {
-    margin-right: 20px;
   }
 }
 
@@ -666,7 +669,7 @@ footer a {
             flex-direction: column;
   }
   nav .menu a {
-    line-height: 30px;
+    line-height: 1.875em;
   }
 }
 /*# sourceMappingURL=main.css.map */
